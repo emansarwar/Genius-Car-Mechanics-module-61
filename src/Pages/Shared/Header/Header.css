@@ -1,0 +1,18 @@
+/* .navigation{
+    
+} */
+.dropwdown-menu{    
+    display: flex; /* the default for span */  
+  
+}
+.login-photo{
+    
+    margin-left: 15px;
+    height: 30%;
+    width: 30%;
+    
+}
+.links{
+    justify-content: center;
+    align-items: center;
+}

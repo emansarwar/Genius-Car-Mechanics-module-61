@@ -1,0 +1,48 @@
+[debug] [2022-01-22T02:23:13.426Z] ----------------------------------------------------------------------
+[debug] [2022-01-22T02:23:13.428Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-01-22T02:23:13.428Z] CLI Version:   10.1.2
+[debug] [2022-01-22T02:23:13.428Z] Platform:      win32
+[debug] [2022-01-22T02:23:13.429Z] Node Version:  v16.13.0
+[debug] [2022-01-22T02:23:13.430Z] Time:          Sat Jan 22 2022 08:23:13 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-01-22T02:23:13.430Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-22T02:23:13.492Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-22T02:23:13.493Z] > authorizing via signed-in user (emansarwar3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projects\Genius-Car-Mechanics-module-61
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-22T02:23:36.416Z] Using project from CLI flag: build
+[debug] [2022-01-22T02:23:36.418Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/build [none]
+[debug] [2022-01-22T02:23:37.301Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/build 403
+[debug] [2022-01-22T02:23:37.301Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/build {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-22T02:23:37.302Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-22T02:23:37.792Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async getFirebaseProject (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:85:27)
+    at async init (C:\Users\Eman\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project build. Please make sure the project exists and your account has permission to access it.
