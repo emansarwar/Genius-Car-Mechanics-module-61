@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "Tourism Discuss"
-  }
+    "default": "tourism-discuss-4b6ba",
+    "staging": "tourism-discuss-4b6ba"
+  },
+  "targets": {}
 }

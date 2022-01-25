@@ -1,39 +1,37 @@
 import React from 'react';
+import './Experts.css';
 
-import mechanic1 from '../../../images/mechanic/mechanic-1.jpg';
-import mechanic2 from '../../../images/mechanic/mechanic-2.jpg'
-import mechanic3 from '../../../images/mechanic/mechanic-3.jpg'
-import mechanic4 from '../../../images/mechanic/mechanic-4.jpg'
+
 import Expert from '../Expert/Expert';
 
 const experts = [
     {
-        img: mechanic1,
+        img:" https://tse4.mm.bing.net/th?id=OIP.F5GWaO859FWMLlaezcgleAHaGX&pid=Api&P=0&w=190&h=163",
         name: 'Andrew Smith',
-        expertize: '-Engine Expert-'
+        expertize: '-AMERICAN GUIDE-'
     },
     {
-        img: mechanic2,
+        img:"https://tse3.mm.bing.net/th?id=OIF.%2f9ba4qI0519nhe7W%2befmAQ&pid=Api&P=0&w=152&h=226",
         name: 'John Anderson',
-        expertize: '-Polish Expert-'
+        expertize: '-FRENCH GUIDE-'
     },
     {
-        img: mechanic3,
+        img: "https://tse3.mm.bing.net/th?id=OIP.DV31Nq95KkajUD55gQ10YgEpDS&pid=Api&P=0&w=249&h=176",
         name: 'Zakaria Smith',
-        expertize: '-Coloring Expert-'
+        expertize: '-ITALIAN GUIDE-'
     },
     {
-        img: mechanic4,
+        img: "https://tse2.mm.bing.net/th?id=OIP.e3yU75QJ3nUNnlfIChaaxAHaEo&pid=Api&P=0&w=273&h=170",
         name: 'Sakib Anderson',
-        expertize: '-Alrounder Expert-'
+        expertize: '-TURKISH GUIDE-'
     },
 ]
 
 const Experts = () => {
     return (
-        <div id="experts" className="container">
+        <div id="experts">
             <h2 className="text-primary mt-5">Our Experts</h2>
-            <div className="row">
+            <div className="experts-container">
                 {
                     experts.map(expert => <Expert
                         key={expert.name}

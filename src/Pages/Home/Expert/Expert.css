@@ -1,0 +1,14 @@
+.expert{
+    background-color: rgb(226, 241, 241);
+    border-radius:10px ;
+    height: auto;
+    width: 350px;
+   
+}
+
+.expert img{
+    width: 100%;
+    height: auto;
+     border-radius: 5px;
+     
+}
